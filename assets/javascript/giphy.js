@@ -1,7 +1,7 @@
 
 
 
-let food = ["Pizza", "Cheesecake", "Sushi", "Raspberries", "Burritos", "cookies"];
+let food = ["Pizza", "Cheesecake", "Sushi", "Cake", "Burritos", "Cookies"];
 
 
 function displayGifs() {
@@ -91,6 +91,7 @@ $("#add-food").on("click", function (event) {
 
     let typedfood = $("#food-input").val().trim();
     food.push(typedfood);
+    $("#food-input").val('');
     renderButtons();
 });
 

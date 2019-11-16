@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giftastic</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
     <div class="container">
         <!--This will contain the buttons-->
-        <h2>Yummy Food</h2>
-        <div class="row">
-            <div class="col-sm" id="buttons-section">
+        
+        
+        <div class="center">
+                <h2>Warning: side effects may include hunger</h2>
+            <div class= "col s12 m12" id="buttons-section">
 
 
             </div>
@@ -26,22 +30,25 @@
 
         <!--This contains the gifs and food input-->
 
-        <div class="row">
-            <div class="col-sm" id="gifs-section">
+        <div class="center">
+           
 
-            </div>
-
-            <div class="col-sm">
+            <div class="col s12 m6">
                 <form id="food-form">
-                    <label for="food-input">Add something delicious</label>
+                    <label for="food-input"><h6>Add something delicious</h6></label>
+                    
                     <input type="text" id="food-input">
-
+                
                     <br>
-
-                    <input type="submit" value="add food" id="add-food">
-
+                    
+                    <button class="btn-floating btn-large waves-effect waves-light teal accent-3" type="submit" value="add food" id="add-food" >
+                            <i class="material-icons">add</i>      
+                    </button>
 
                 </form>
+            </div> 
+            <div class="col s12 m6" id="gifs-section">
+
             </div>
         </div>
 
